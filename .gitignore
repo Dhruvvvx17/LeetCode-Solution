@@ -1,1 +1,2 @@
-*.exe
+# To avoid a.exe additions
+.*exe
