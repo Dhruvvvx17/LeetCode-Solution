@@ -9,9 +9,9 @@ typedef struct TreeNode {
 } TreeNode;
 
 
-int findIndex(int *inorder, int size, int root_val){
+int findIndex(int *inorder, int begin, int size, int root_val){
     int index;
-    for(int i=0; i<=size; i++){
+    for(int i=begin; i<=size; i++){
         if(inorder[i]==root_val){
             index = i;
             break;
@@ -37,7 +37,7 @@ TreeNode* buildTreeHelper(int *preorder, int preorderSize, int *inorder, int sta
     
     // intermediate node
     else{
-        int root_index = findIndex(inorder, end, root->val);
+        int root_index = findIndex(inorder, start, end, root->val);
         root->left = buildTreeHelper(preorder, preorderSize-1, inorder, start, root_index-1, globalIndex);
         root->right = buildTreeHelper(preorder, preorderSize-1, inorder, root_index+1, end, globalIndex);
         return root;
