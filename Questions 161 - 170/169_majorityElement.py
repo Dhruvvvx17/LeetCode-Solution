@@ -1,4 +1,4 @@
-from posixpath import split
+# check out Boyer-Moore Voting Algorithm
 from typing import List
 
 def majorityElement(nums: List[int]) -> int:
