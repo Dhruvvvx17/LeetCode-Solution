@@ -1,3 +1,5 @@
+// sieve of Eratosthenes
+
 #include<iostream>
 #include<vector>
 #include<math.h>
