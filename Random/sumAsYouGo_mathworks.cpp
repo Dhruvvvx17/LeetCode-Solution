@@ -10,7 +10,7 @@ int getMax(int a, int b) {
 
 int maxSumAsYouGo(vector<int> nums, int maxLength) {
 
-    vector<int> dp (nums.size(), -100);
+    vector<int> dp (nums.size(), INT_MIN);
 
     // first element sum remains the same
     dp[0] = nums[0];
