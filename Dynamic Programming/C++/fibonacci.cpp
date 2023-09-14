@@ -1,5 +1,6 @@
 // given a number n, find the nth fibonacci number
-
+// Time complexity without memoization = O(2^n) - n is the number
+// Time complexity with memoization = O(2*n) - n is the number
 #include<iostream>
 #include<map>
 using namespace std;

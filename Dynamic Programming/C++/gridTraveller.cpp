@@ -1,5 +1,6 @@
 // Given a mxn grid, how many ways can I go from the start (0,0) to the end (m,n) by just moving RIGHT or DOWN
-
+// Time Complexity without memoization O(2 ^ (m+n))
+// Time Complexity with memoization O(m*n) - m = no. of rows and n = no. of columns
 #include<iostream>
 #include<map>
 using namespace std;
